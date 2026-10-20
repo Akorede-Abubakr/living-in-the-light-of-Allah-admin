@@ -357,6 +357,8 @@ export const BlogsManagementPage: React.FC = () => {
                       src={blog.coverImage || PRESET_COVERS[0].url}
                       alt={blog.title}
                       className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                       onError={(e: any) => {
                         e.target.src = PRESET_COVERS[0].url;
                       }}

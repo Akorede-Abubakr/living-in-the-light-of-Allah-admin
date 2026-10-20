@@ -348,6 +348,8 @@ export const BooksManagementPage: React.FC = () => {
                             src={book.coverImage || '/placeholder-book.jpg'}
                             alt={book.title}
                             className="w-12 h-16 object-cover rounded-lg shadow-sm border border-[#DDE8E1] dark:border-white/10 flex-shrink-0"
+                            loading="lazy"
+                            decoding="async"
                           />
                           <div>
                             <div className="font-serif font-bold text-sm text-[#202522] dark:text-white line-clamp-1">

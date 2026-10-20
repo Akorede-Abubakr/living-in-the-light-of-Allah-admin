@@ -265,6 +265,8 @@ export const OrdersManagementPage: React.FC = () => {
                         src={item.coverImage || '/placeholder-book.jpg'}
                         alt={item.title}
                         className="w-8 h-11 object-cover rounded shadow-sm"
+                        loading="lazy"
+                        decoding="async"
                       />
                       <span className="font-medium text-[#202522] dark:text-white">
                         {item.title}

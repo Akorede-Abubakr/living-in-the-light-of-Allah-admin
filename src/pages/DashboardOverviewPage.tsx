@@ -190,6 +190,8 @@ export const DashboardOverviewPage: React.FC = () => {
                       src={item.book?.coverImage || '/placeholder-book.jpg'}
                       alt={item.book?.title}
                       className="w-10 h-14 object-cover rounded-lg shadow-sm"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="flex-1 min-w-0">
                       <h4 className="text-xs font-bold text-[#202522] dark:text-white truncate">
